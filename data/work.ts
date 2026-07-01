@@ -32,6 +32,7 @@ const vt = [0, 1, 2, 3, 4, 5, 6].map((i) => `/apps/shots/vocabtunes-ai-word-buil
 const ke = [0, 1, 2].map((i) => `/apps/shots/king-english-kids-anime-${i}.png`);
 const we = [0, 1, 2, 3].map((i) => `/apps/shots/wenlambo-ai-${i}.png`);
 const sc = [0, 1, 2, 3, 4].map((i) => `/apps/shots/new-scan-qr-${i}.png`);
+const yk = [0, 1, 2, 3, 4].map((i) => `/apps/shots/yk-${i}.png`);
 
 
 export const workGroups: WorkGroup[] = [
@@ -186,7 +187,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Truth or dare, read aloud",
         description:
           "A modern truth-or-dare that reads cards out loud so no one stares at a phone — playful, flirty or chaotic packs, plus custom rules you make your own.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "amber",
@@ -194,6 +195,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/yikes-truth-dare-party-game/id6758385148",
         urlLabel: "App Store",
         icon: "/apps/icons/yikes-truth-dare-party-game.jpg",
+        shots: yk,
       },
       {
         id: "rouly",
