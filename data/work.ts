@@ -30,6 +30,9 @@ export type WorkGroup = { label: string; hint: string; items: WorkItem[] };
 
 const vt = [0, 1, 2, 3, 4, 5, 6].map((i) => `/apps/shots/vocabtunes-ai-word-builder-${i}.png`);
 const ke = [0, 1, 2].map((i) => `/apps/shots/king-english-kids-anime-${i}.png`);
+const we = [0, 1, 2, 3].map((i) => `/apps/shots/wenlambo-ai-${i}.png`);
+const sc = [0, 1, 2, 3, 4].map((i) => `/apps/shots/new-scan-qr-${i}.png`);
+
 
 export const workGroups: WorkGroup[] = [
   {
@@ -136,7 +139,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "AI memecoin chart scanner",
         description:
           "Snap or upload a memecoin chart and get an instant AI Buy / Sell / Hold call with the reasoning — trend, key levels and indicators, built camera-first for volatile charts.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2025",
         accent: "amber",
@@ -144,6 +147,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/wenlambo-ai-meme-alt-scanner/id6749757392",
         urlLabel: "App Store",
         icon: "/apps/icons/wenlambo-ai.jpg",
+        shots: we,
       },
       {
         id: "qrcode",
@@ -151,7 +155,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Instant QR scan & generator",
         description:
           "Full-screen instant QR scanning plus a custom generator for links, Wi-Fi, text, contacts and locations — fast, ad-free, with a clean visual history.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2025",
         accent: "cyan",
@@ -159,6 +163,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/new-scan-qr-code-no-ads/id6749230692",
         urlLabel: "App Store",
         icon: "/apps/icons/new-scan-qr-code-no-ads.jpg",
+        shots: sc,
       },
       {
         id: "buzzed",
