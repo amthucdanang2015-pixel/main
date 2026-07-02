@@ -35,6 +35,7 @@ const sc = [0, 1, 2, 3, 4].map((i) => `/apps/shots/new-scan-qr-${i}.png`);
 const yk = [0, 1, 2, 3, 4].map((i) => `/apps/shots/yk-${i}.png`);
 const nv = [0, 1, 2, 3].map((i) => `/apps/shots/never-ever-${i}.jpg`);
 const ms = [0, 1, 2, 3].map((i) => `/apps/shots/most-likely-to-${i}.png`);
+const rl = [0, 1, 2, 3].map((i) => `/apps/shots/rouly-${i}.png`);
 
 export const workGroups: WorkGroup[] = [
   {
@@ -204,7 +205,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Party roulette",
         description:
           "Spin the wheel, it picks who's next, the card says what to do — a clean, premium, ad-free party roulette for friends, couples and wild nights.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "blue",
@@ -212,6 +213,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/rouly-party-roulette-game/id6758606033",
         urlLabel: "App Store",
         icon: "/apps/icons/rouly.jpg",
+        shots: rl,
       },
       {
         id: "mostlikelyto",
