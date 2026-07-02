@@ -33,7 +33,8 @@ const ke = [0, 1, 2].map((i) => `/apps/shots/king-english-kids-anime-${i}.png`);
 const we = [0, 1, 2, 3].map((i) => `/apps/shots/wenlambo-ai-${i}.png`);
 const sc = [0, 1, 2, 3, 4].map((i) => `/apps/shots/new-scan-qr-${i}.png`);
 const yk = [0, 1, 2, 3, 4].map((i) => `/apps/shots/yk-${i}.png`);
-
+const nv = [0, 1, 2, 3].map((i) => `/apps/shots/never-ever-${i}.jpg`);
+const ms = [0, 1, 2, 3].map((i) => `/apps/shots/most-likely-to-${i}.png`);
 
 export const workGroups: WorkGroup[] = [
   {
@@ -218,7 +219,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Listen & vote",
         description:
           "The app reads each question aloud, the countdown runs and everyone votes before time's up — easy to learn, fast to play, made for group moments.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "cyan",
@@ -226,6 +227,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/most-likely-to-listen-vote/id6759958663",
         urlLabel: "App Store",
         icon: "/apps/icons/most-likely-to.jpg",
+        shots: ms,
       },
       {
         id: "neverever",
@@ -233,7 +235,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Never-have-I-ever, automated",
         description:
           "Never-have-I-ever, fully automated — it picks the player, reads the prompt aloud, counts down and moves on. No pauses, no friction, just press play and let it run.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "violet",
@@ -241,6 +243,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/never-ever-listen-answer/id6759959558",
         urlLabel: "App Store",
         icon: "/apps/icons/never-ever.jpg",
+        shots: nv,
       },
       {
         id: "dilemma",
