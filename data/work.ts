@@ -30,12 +30,14 @@ export type WorkGroup = { label: string; hint: string; items: WorkItem[] };
 
 const vt = [0, 1, 2, 3, 4, 5, 6].map((i) => `/apps/shots/vocabtunes-ai-word-builder-${i}.png`);
 const ke = [0, 1, 2].map((i) => `/apps/shots/king-english-kids-anime-${i}.png`);
-const we = [0, 1, 2, 3].map((i) => `/apps/shots/wenlambo-ai-${i}.png`);
+const we = [0, 1, 2, 3].map((i) => `/apps/shots/wenlambo_${i}.png`);
 const sc = [0, 1, 2, 3, 4].map((i) => `/apps/shots/new-scan-qr-${i}.png`);
 const yk = [0, 1, 2, 3, 4].map((i) => `/apps/shots/yk-${i}.png`);
 const nv = [0, 1, 2, 3].map((i) => `/apps/shots/never-ever-${i}.jpg`);
 const ms = [0, 1, 2, 3].map((i) => `/apps/shots/most-likely-to-${i}.png`);
 const rl = [0, 1, 2, 3].map((i) => `/apps/shots/rouly-${i}.png`);
+const dl = [0, 1, 2, 3].map((i) => `/apps/shots/dilem_${i}.png`);
+const bz = [0, 1, 2, 3].map((i) => `/apps/shots/buzz-${i}.png`);
 
 export const workGroups: WorkGroup[] = [
   {
@@ -238,7 +240,7 @@ export const workGroups: WorkGroup[] = [
         tagline: "Would-you-rather, faster",
         description:
           "Would-you-rather as a faster party game — a wheel picks the player and the app reads the dilemma aloud, then the next turn starts fast. Offline, ad-free.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "amber",
@@ -246,14 +248,15 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/dilemma-what-would-you-choose/id6761237352",
         urlLabel: "App Store",
         icon: "/apps/icons/dilemma.jpg",
+        shots: dl,
       },
-        {
+      {
         id: "buzzed",
         name: "Buzzed",
         tagline: "Do-or-drink party cards",
         description:
           "A do-or-drink party card game with themed deck packs and custom rules built for real groups — quick setup, rotating turns and decks that match the vibe.",
-        mode: "info",
+        mode: "gallery",
         role: "Frontend · React Native",
         year: "2026",
         accent: "violet",
@@ -261,6 +264,7 @@ export const workGroups: WorkGroup[] = [
         url: "https://apps.apple.com/us/app/buzzed-adult-party-game-cards/id6757947194",
         urlLabel: "App Store",
         icon: "/apps/icons/buzzed.jpg",
+        shots: bz,
       },
     ],
   },
